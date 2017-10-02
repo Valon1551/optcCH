@@ -1,6 +1,7 @@
 # OPTCContentHelper
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
+It is a small project that helps me to understand Angular better. This will be a small database of the Content of OPTC.
 
 ## Development server
 

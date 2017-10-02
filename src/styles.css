@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgba(249, 255, 229, 0.2);
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile */
+@media(min-width:200px){
+  .logo {
+    width: 85vw;
+  }
+
+  .optcCH-content-wrapper{
+    margin-top: 3%;
+    margin-left: 5%;}
+
+  h1 {font-size: 160%;}
+  p {font-size: 110%; }
+}
+
+/* Desktop */
+@media(min-width:900px){
+
+  .logo {
+    width: 35vw;
+  }
+
+  .optcCH-content-wrapper{
+    margin-top: 1%;
+    margin-left: 1%;}
+
+  h1 {font-size: 250%; }
+  p {font-size: 100%; }
+}
