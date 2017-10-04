@@ -1,0 +1,9 @@
+{
+  "data" :[
+    {"id": 1, "name": "Boa Hancock", "difficulty": 60},
+    {"id": 2, "name": "Sabo", "difficulty": 60},
+    {"id": 3, "name": "Mihawk", "difficulty": 40},
+    {"id": 4, "name": "Eneru", "difficulty": 60},
+    {"id": 5, "name": "Shiki", "difficulty": 60}
+  ]
+}

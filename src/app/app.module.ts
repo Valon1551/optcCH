@@ -5,6 +5,7 @@ import {TabMenuModule, MenuItem} from 'primeng/primeng';
 import {MenuModule} from 'primeng/primeng';
 import {FieldsetModule} from 'primeng/primeng';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {DataGridModule} from 'primeng/primeng';
 
 import {APP_ROUTING_PROVIDERS, ROUTING} from "./app.routes";
 
@@ -15,6 +16,10 @@ import {APP_BASE_HREF} from "@angular/common";
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
 import { ColiseumComponent } from './coliseum/coliseum.component';
 import { AmbushComponent } from './ambush/ambush.component';
+import { DatagridComponent } from './datagrid/datagrid.component';
+import {SelectionService} from "./selection.service";
+import {HttpModule} from "@angular/http";
+import { BreakdownComponent } from './breakdown/breakdown.component';
 
 @NgModule({
   declarations: [
@@ -23,20 +28,25 @@ import { AmbushComponent } from './ambush/ambush.component';
     AboutComponent,
     NavigationbarComponent,
     ColiseumComponent,
-    AmbushComponent
+    AmbushComponent,
+    DatagridComponent,
+    BreakdownComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     ButtonModule,
     MenuModule,
     TabMenuModule,
     FieldsetModule,
     BrowserAnimationsModule,
+    DataGridModule,
     ROUTING
   ],
   providers: [
     APP_ROUTING_PROVIDERS,
-    {provide: APP_BASE_HREF, useValue: "/optcCH/"}
+    {provide: APP_BASE_HREF, useValue: "/optcCH/"},
+    SelectionService
   ],
   bootstrap: [AppComponent]
 })

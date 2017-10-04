@@ -1,0 +1,12 @@
+<p-dataGrid [value]="selections">
+  <ng-template let-raidselection pTemplate="item" let-i="index">
+    <div class="ui-g-12 ui-md-3 ui-widget-content" (click)="openRaidPage(raidselection.id)">
+      <img src="assets/images/raidicons/{{raidselection.id}}.png" align="middle"/>
+      <strong>{{raidselection.name}}</strong> on <strong>{{raidselection.difficulty}}</strong> stamina!
+    </div>
+  </ng-template>
+</p-dataGrid>
+
+<!--
+{{selections[i].name}} on {{selections[i].difficulty}} works too
+-->

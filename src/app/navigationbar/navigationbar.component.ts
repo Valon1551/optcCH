@@ -14,10 +14,10 @@ export class NavigationbarComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
+      {label: 'About', icon: 'fa-info-circle', routerLink: ["/about"]},
       {label: 'Raids', icon: 'fa-superpowers', routerLink: ["/raids"]},
       {label: 'Coliseum', icon: 'fa-bank', routerLink: ["/coliseum"]},
-      {label: 'Ambush', icon: 'fa-ship',  routerLink: ["/ambush"]},
-      {label: 'About', icon: 'fa-info-circle', routerLink: ["/about"]}
+      {label: 'Ambush', icon: 'fa-ship',  routerLink: ["/ambush"]}
     ];
   }
 
